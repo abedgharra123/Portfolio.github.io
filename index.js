@@ -55,3 +55,7 @@ function EndlessDriving(){
 function CoronaOverflow(){
   window.location.href = "https://github.com/abedgharra123/Corona-Overflow";
 }
+
+function Cinema(){
+  window.location.href = "https://github.com/abedgharra123/Cinema";
+}
