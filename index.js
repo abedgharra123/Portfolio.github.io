@@ -59,3 +59,7 @@ function CoronaOverflow(){
 function Cinema(){
   window.location.href = "https://github.com/abedgharra123/Cinema";
 }
+
+function ATAPlay(){
+  window.location.href = "https://play.google.com/store/apps/details?id=com.AbedAlgane.AvoidTheAsteroid";
+}
