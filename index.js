@@ -63,3 +63,7 @@ function Cinema(){
 function ATAPlay(){
   window.location.href = "https://play.google.com/store/apps/details?id=com.AbedAlgane.AvoidTheAsteroid";
 }
+
+function EDPlay(){
+  window.location.href = "https://play.google.com/store/apps/details?id=com.AbedAlgane.SimpleDriving";
+}
