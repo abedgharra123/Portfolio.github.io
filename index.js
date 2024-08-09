@@ -1,69 +1,32 @@
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('body,html').animate({
-      scrollTop: $(hash).offset().top
-      }, 1200, function(){
-      window.location.hash = hash;
-     });
-     } 
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+document.querySelectorAll('.project-img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
     });
 });
 
-var width = $(window).width(); 
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
 
-window.onscroll = function(){
-if ((width >= 900)){
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        $("#middle").css("background-size","150% auto");
-    }else{
-        $("#middle").css("background-size","100% auto");        
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target === closeBtn) {
+        lightbox.style.display = 'none';
     }
-}
-};
+});
 
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-    },800);
-},1450);
-
-function magnify(imglink){
-  $("#img_here").css("background",`url('${imglink}') center center`);
-  $("#magnify").css("display","flex");
-  $("#magnify").addClass("animated fadeIn");
-  setTimeout(function(){
-      $("#magnify").removeClass("animated fadeIn");
-  },800);
-}
-
-function linkedin(){
-  window.location.href = "https://www.linkedin.com/in/abedgh/"; 
-}
-
-
-function EndlessDriving(){
-  window.location.href = "https://github.com/abedgharra123/Endless-Driving"; 
-}
-
-
-
-function CoronaOverflow(){
-  window.location.href = "https://github.com/abedgharra123/Corona-Overflow";
-}
-
-function Cinema(){
-  window.location.href = "https://github.com/abedgharra123/Cinema";
-}
-
-function ATAPlay(){
-  window.location.href = "https://play.google.com/store/apps/details?id=com.AbedAlgane.AvoidTheAsteroid";
-}
-
-function EDPlay(){
-  window.location.href = "https://play.google.com/store/apps/details?id=com.AbedAlgane.SimpleDriving";
-}
+// Scroll effect to change overlay shade
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    const scrollTop = window.scrollY;
+    if (scrollTop > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
