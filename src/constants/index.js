@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  SolarEdge,
+  barbershops
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +44,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Automation Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Embedded Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Flutter Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Web Developer",
     icon: creator,
   },
 ];
@@ -116,150 +118,82 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Automation Engineer Student",
+    company_name: "SolarEdge",
+    icon: SolarEdge,
+    iconBg: "#FFFFFF",
+    date: "December 2021 - July 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintained automated testing system using C#.",
+      "Leaded fleet of lab test machines and integrated with CI automation",
+      "Responsibility for process automations to improve day to day activities." 
+
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Automation Engineer",
+    company_name: "SolarEdge",
+    icon: SolarEdge,
+    iconBg: "#FFFFFF",
+    date: "July 2022 - Feb 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and maintain automated testing systems for embedded devices using C#, NUnit, .NET 4.7.2, .NET 6, .NET 7, Python PyUnit, Multithreading, Parallel Processing, Git, GitLab CI/CD, YAML, GitLab-Runners, Bat Scripts, PowerShell scripts, Visual Studio, JFrog, JFrog Artifactory.",
+      "Built an inline website from scratch for stakeholders and implemented CI/CD processes using C#, MVC ASP.NET, CSHTML, CSS, JavaScript, SQL, Entity Framework, and SQL Server Management.",
+      "Leaded a fleet of lab test machines and associated CI automation.",
+      "Used Varus communication technologies such as TCP/IP, UDP, RS485, Ethernet, USR-VCOM",
+      "Created a desktop application using C# forms for multiple devices to enable remote control and connectionbetween two com ports",
+      "Developed a GUI using C# Forms (.NET Core) to control devices enhanced with additional features, utilizing both TCP and COM port communication protocols with Google ProtoBuf.",
+      "Maintain comprehensive documentation of the testing system and provide training to junior team members",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Embedded Software Engineer",
+    company_name: "SolarEdge",
+    icon: SolarEdge,
+    iconBg: "#FFFFFF",
+    date: "Feb 2024 - Sep 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained various C projects, utilizing technologies such as IAR, Simplicity Studio, VS Code, STM32 M0, Atmel, EFR32, EFM32, FreeRTOS, BareMetal, Google Protocol Buffers, Modbus, RS485, UART, and SPI.",
+      
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
-    company: "DEF Corp",
+    company: "SolarEdge",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Barber Shops",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Cross platform application that manages barber shops, booking, find nearest barber, best barbers",
     tags: [
       {
-        name: "react",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Dart",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: barbershops,
     source_code_link: "https://github.com/",
   },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
