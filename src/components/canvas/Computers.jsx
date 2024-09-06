@@ -61,16 +61,13 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
 
-      <Preload all />
+      <img
+            src={image}
+            alt='project_image'
+            className='w-full h-full object-cover rounded-2xl'
+          />
+
     </Canvas>
   );
 };
